@@ -56,8 +56,16 @@ checksum = "201de327520df007757c1f0adce6e827fe8562fbc28bfd9c15571c66ca1f5f79"
 
 [[package]]
 name = "lightning"
-version = "0.0.113"
-source = "git+https://github.com/jkczyz/rust-lightning?rev=9c2a3d090b618b98f2cd89c0193c4866331375ea#9c2a3d090b618b98f2cd89c0193c4866331375ea"
+version = "0.0.116-alpha1"
+dependencies = [
+ "bitcoin",
+ "musig2",
+]
+
+[[package]]
+name = "musig2"
+version = "0.1.0"
+source = "git+https://github.com/arik-so/rust-musig2?rev=27797d7#27797d78cf64e8974e38d7f31ebb11e455015a9e"
 dependencies = [
  "bitcoin",
 ]

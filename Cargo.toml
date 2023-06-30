@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 bitcoin = { version = "0.29.0", default-features = false, features = ["secp-recovery"] }
-lightning = { git = "https://github.com/jkczyz/rust-lightning", rev = "9c2a3d090b618b98f2cd89c0193c4866331375ea", features = ["max_level_trace"] }
+lightning = { path = "../rust-lightning/lightning", version = "0.0.116-alpha" }
+#lightning = { git = "https://github.com/jkczyz/rust-lightning", rev = "9c2a3d090b618b98f2cd89c0193c4866331375ea", features = ["max_level_trace"] }
 rand = { version = "0.8.5" }
